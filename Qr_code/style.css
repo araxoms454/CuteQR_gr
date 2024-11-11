@@ -1,0 +1,100 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: black;
+    color: rgb(255, 255, 255);
+}
+
+.container {
+    text-align: center;
+}
+
+#text-input {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #952695;
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    cursor: pointer;
+    transition: transform 0.2s, background-color 0.3s;
+}
+
+button:hover {
+    transform: scale(1.1);
+    background-color: pink;
+}
+
+#qr-code canvas {
+    background-color: black; /* Ensure the background matches the body */
+}
+
+#hover-emoji {
+    display: inline-block;
+    animation: hover-move 2s ease-in-out infinite;
+}
+
+@keyframes hover-move {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+
+#flower-emoji {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    animation: flower-circle 5s linear infinite;
+}
+
+@keyframes flower-circle {
+    0% { transform: rotate(0deg) translateX(0); }
+    100% { transform: rotate(360deg) translateX(0); }
+}
+
+.corner-flower {
+    position: fixed;
+    font-size: 24px;
+}
+
+.top-left {
+    top: 10px;
+    left: 10px;
+}
+
+.top-right {
+    top: 10px;
+    right: 10px;
+}
+
+.bottom-left {
+    bottom: 10px;
+    left: 10px;
+}
+
+.bottom-right {
+    bottom: 10px;
+    right: 10px;
+}
+
+
+ss
+.catch-copy {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    font-size: 14px;
+    color: white;
+    
+}

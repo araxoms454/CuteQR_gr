@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Code Generator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/qrcode@1.4.4/build/qrcode.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>QR Code <span id="hover-emoji">😊</span></h1>
+        <input type="text" id="text-input" placeholder="Enter text for QR code">
+        <button id="generate-btn">Generate QR Code</button>
+        <div id="qr-code"></div>
+        <button id="download-btn" style="display:none;">Download QR Code</button> <!-- Download button hidden initially -->
+        <div id="flower-emoji">🌸</div>
+        <div class="corner-flower top-right">🌸</div>
+        <div class="corner-flower bottom-left">🌸</div>
+        <div class="corner-flower bottom-right">🌸</div>
+    </div>
+    <script src="script.js"></script>
+    
+</body>
+</html>
